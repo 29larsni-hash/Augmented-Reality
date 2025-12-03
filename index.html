@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+		<!-- include ar.js for a-frame -->
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+	</head>
+	<body>
+		<a-scene embedded arjs>
+			<a-marker preset="hiro">
+			<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <a-scene>
+	<a-box
+		color="Red"
+		height="1.5"
+		width="1.5"
+		depth="1.5"
+		position="0 5 -10"
+		rotation="0 45 0"
+		>
+				</a-box>
+				
+				<a-box
+		color="#0800FF"
+		height="1.5"
+		width="1.5"
+		depth="1.5"
+		position="-1.25 3.5 -10"
+		rotation="0 45 0"
+		>
+				</a-box>
+						<a-box
+		color="#00E2FF"
+		height="1.5"
+		width="1.5"
+		depth="1.5"
+		position="1.25 3.5 -10"
+		rotation="0 45 0"
+		>
+				</a-box>
+				<a-cylinder 
+				position="0 6.5 -10" 
+				radius="0.25" 
+				height="1"
+				color="Green">
+				
+						</a-cylinder>
+				<a-cone 
+				color="red" 
+				radius-bottom="0.5" 
+				radius-top="0" 
+				height="0.5" 
+				position="0 7 -10">
+						</a-cone>
+				<a-plane 
+				position="0 0 -10" 
+				rotation="-90 0 0" 
+				width="10" 
+				height="10" 
+				color="grey">
+						</a-plane>
+			</a-scene>
+		</body>
+	</html>
+			</a-marker>
+
+			<!-- define a camera which will move according to the marker position -->
+			<a-entity camera></a-entity>
+		</a-scene>
+	</body>
+</html>
